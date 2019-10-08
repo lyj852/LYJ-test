@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style type="text/css">
+    div{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: red;
+		}
+	</style>
+	</head>
+	<body>
+	 <div id="myid"></div>
+     <div id="myid"></div>
+     <div id="myid"></div>
+     <div id="myid"></div>
+     <div id="myid"></div>
+     <div id="myid"></div>
+	</body>
+	<script>
+		var div = document.getElementsByTagName("div");
+	     for(var i=0;i<div.length;i++){
+		div[i].style.display="inline-block";
+		div[i].style.marginLeft=15+"px";
+		div[i].style.width=30+'px';
+		div[i].style.height=30+'px';
+		div[i].style.backgroundColor= "red";
+		div[i].style.borderRadius="100%";
+		div[i].onclick=function(){
+			this.style.backgroundColor= "blue";
+			this.style.transition="1s";
+			this.style.borderRadius="";
+		}
+	}
+	</script>
+</html>
